@@ -1299,3 +1299,105 @@ h1, h2, h3, h4 {
         }
     }
 }
+
+/* =============================================================
+   MOBILE RESPONSIVE STYLES (≤480px)
+   ============================================================= */
+@media (max-width: 480px) {
+    /* Navbar – stack links vertically */
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .nav-menu .nav-link {
+        padding: 8px 0;
+        font-size: 0.95rem;
+    }
+    /* Hero Section */
+    .hero-content {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .hero-headline {
+        font-size: 2.2rem;
+    }
+    .hero-subhead {
+        font-size: 1rem;
+    }
+    .hero-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    /* Section containers – reduce padding */
+    .section-container {
+        padding: 60px 1rem;
+    }
+    /* Gallery – single column */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .polaroid-card {
+        max-width: 100%;
+    }
+    /* Lesson cards – stacked */
+    .lessons-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .lesson-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* Timeline – full width, vertical line on left */
+    .timeline-container {
+        padding: 0 1rem;
+    }
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        text-align: left !important;
+        padding: 0 1rem;
+    }
+    .timeline-item .timeline-dot {
+        left: -22px !important;
+    }
+    .timeline-line {
+        left: 20px;
+    }
+    /* Promise section – reduce padding */
+    .promise-card {
+        padding: 60px 1rem;
+    }
+    .promise-text {
+        font-size: 2.2rem;
+    }
+    .promise-subtext {
+        font-size: 1.6rem;
+    }
+    /* Ending section – center elements */
+    .ending-container {
+        text-align: center;
+    }
+    .ending-title {
+        font-size: 2.5rem;
+    }
+    .ending-subtext {
+        font-size: 1.2rem;
+    }
+    /* General image responsiveness */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
