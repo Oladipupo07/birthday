@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Honitee ❤️ | A Birthday Tribute</title>
+
+    <!-- SEO and Meta Tags -->
+    <meta name="description"
+        content="A premium digital gift and personal appreciation website dedicated to my mother, Honitee, for her birthday. Celebrating her love, strength, and sacrifices.">
+    <meta property="og:title" content="For Honitee ❤️ | A Birthday Tribute">
+    <meta property="og:description"
+        content="A beautiful digital tribute celebrating the love, sacrifices, and strength of my mother, Honitee.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Cormorant Garamond (Premium Serif), Outfit (Modern Sans), Caveat (Elegant script for polaroids) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons for modern, premium micro-details -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Background Canvas for Soft Fireflies Particle Effect -->
+    <canvas id="ambient-particles" aria-hidden="true"></canvas>
+
+    <!-- Global Celebration Canvas for Confetti & Floating Hearts -->
+    <canvas id="celebration-canvas" aria-hidden="true"></canvas>
+
+    <!-- Music Player Indicator (Optional Decorative Audio Feature Placeholder) -->
+    <div class="audio-control" id="audio-toggle" role="button" aria-label="Toggle Soft Background Music" tabindex="0">
+        <i class="fas fa-music"></i>
+        <span class="audio-pulse"></span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" role="banner">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="For Honitee Homepage">For Honitee ❤️</a>
+            <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+                <a href="#letter" class="nav-link">Letter</a>
+                <a href="#gallery" class="nav-link">Memories</a>
+                <a href="#lessons" class="nav-link">Lessons</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#promise" class="nav-link">My Promise</a>
+                <a href="#ending" class="nav-link font-accent">Celebrate ✨</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <span class="hero-tag" data-reveal>A Special Birthday Gift</span>
+                <h1 id="hero-title" class="hero-headline" data-reveal>For Honitee ❤️</h1>
+                <p class="hero-subhead" data-reveal>
+                    A celebration of your love, sacrifices, strength, and everything you have done for me.
+                </p>
+                <div class="hero-actions" data-reveal>
+                    <a href="#letter" class="btn btn-primary" aria-label="Scroll to my personal letter">
+                        Read My Letter <i class="fas fa-chevron-down btn-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Animated Scroll Down Indicator -->
+            <a href="#letter" class="scroll-indicator" aria-label="Scroll down to letter">
+                <span class="scroll-text">Scroll Down</span>
+                <div class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </div>
+            </a>
+        </section>
+
+        <!-- 2. PERSONAL LETTER SECTION -->
+        <section id="letter" class="letter-section" aria-labelledby="letter-heading">
+            <div class="section-container">
+                <div class="envelope-container" data-reveal>
+                    <div class="letter-card">
+                        <!-- Left & Right decorative gold corners -->
+                        <div class="letter-corner top-left"></div>
+                        <div class="letter-corner top-right"></div>
+                        <div class="letter-corner bottom-left"></div>
+                        <div class="letter-corner bottom-right"></div>
+
+                        <div class="letter-body">
+                            <h2 id="letter-heading" class="letter-title">Dear Honitee,</h2>
+
+                            <div class="letter-paragraph">
+                                <p class="letter-line font-handwritten">Thank you for every sacrifice you made quietly.
+                                </p>
+                                <p class="letter-line font-handwritten">Thank you for every prayer, every lesson, and
+                                    every moment you stood beside me.</p>
+                                <p class="letter-line font-handwritten">Thank you for believing in me and helping me
+                                    become who I am today.</p>
+                                <p class="letter-line font-handwritten">This website is a small reminder that everything
+                                    you do matters to me.</p>
+                            </div>
+
+                            <div class="letter-closing">
+                                <p class="closing-salutation">With all my love,</p>
+                                <p class="closing-name font-handwritten-signature">Happy Birthday ❤️</p>
+                            </div>
+                        </div>
+
+                        <!-- Wax seal emblem -->
+                        <div class="wax-seal" aria-hidden="true">
+                            <span class="wax-heart">❤️</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MEMORIES GALLERY -->
+        <section id="gallery" class="gallery-section" aria-labelledby="gallery-heading">
+            <div class="section-container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Nostalgia</span>
+                    <h2 id="gallery-heading" class="section-title">Moments I’ll Always Treasure</h2>
+                    <p class="section-subtitle">Real snapshots of your beauty, warmth, and our beautiful moments
+                        together. Click a polaroid to replace it with your own photo!</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Polaroid Card 1 -->
+                    <div class="polaroid-card" data-reveal>
+                        <div class="polaroid-image-wrapper">
+                            <img id="img-childhood" src="assets/mom_1.jpg"
+                                alt="Beautiful portrait of Honitee in burgundy dress" class="polaroid-image">
+                            <label for="upload-childhood" class="photo-replace-overlay" tabindex="0" role="button"
+                                aria-label="Change Childhood Photo">
+                                <i class="fas fa-camera"></i>
+                                <span>Change Photo</span>
+                            </label>
+                            <input type="file" id="upload-childhood" class="hidden-file-input" accept="image/*"
+                                aria-label="Upload custom childhood memory photo">
+                        </div>
+                        <div class="polaroid-caption font-handwritten">
+                            A Beautiful Portrait of Grace
+                        </div>
+                    </div>
+
+                    <!-- Polaroid Card 2 -->
+                    <div class="polaroid-card" data-reveal>
+                        <div class="polaroid-image-wrapper">
+                            <img id="img-schooldays" src="assets/mom_2.jpg" alt="Honitee with family"
+                                class="polaroid-image">
+                            <label for="upload-schooldays" class="photo-replace-overlay" tabindex="0" role="button"
+                                aria-label="Change School Days Photo">
+                                <i class="fas fa-camera"></i>
+                                <span>Change Photo</span>
+                            </label>
+                            <input type="file" id="upload-schooldays" class="hidden-file-input" accept="image/*"
+                                aria-label="Upload custom school days memory photo">
+                        </div>
+                        <div class="polaroid-caption font-handwritten">
+                            Family Blessed by Your Love
+                        </div>
+                    </div>
+
+                    <!-- Polaroid Card 3 -->
+                    <div class="polaroid-card" data-reveal>
+                        <div class="polaroid-image-wrapper">
+                            <img id="img-lessons" src="assets/mom_3.jpg"
+                                alt="Smiling portrait of Honitee in sparkly silver dress" class="polaroid-image">
+                            <label for="upload-lessons" class="photo-replace-overlay" tabindex="0" role="button"
+                                aria-label="Change Life Lessons Photo">
+                                <i class="fas fa-camera"></i>
+                                <span>Change Photo</span>
+                            </label>
+                            <input type="file" id="upload-lessons" class="hidden-file-input" accept="image/*"
+                                aria-label="Upload custom lessons memory photo">
+                        </div>
+                        <div class="polaroid-caption font-handwritten">
+                            The Sparkle of Your Happiness
+                        </div>
+                    </div>
+
+                    <!-- Polaroid Card 4 -->
+                    <div class="polaroid-card" data-reveal>
+                        <div class="polaroid-image-wrapper">
+                            <img id="img-today" src="assets/mom_4.jpg" alt="Honitee close up resting chin on hands"
+                                class="polaroid-image">
+                            <label for="upload-today" class="photo-replace-overlay" tabindex="0" role="button"
+                                aria-label="Change Today Photo">
+                                <i class="fas fa-camera"></i>
+                                <span>Change Photo</span>
+                            </label>
+                            <input type="file" id="upload-today" class="hidden-file-input" accept="image/*"
+                                aria-label="Upload custom today memory photo">
+                        </div>
+                        <div class="polaroid-caption font-handwritten">
+                            Your Loving and Gentle Warmth
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. WHAT YOU TAUGHT ME -->
+        <section id="lessons" class="lessons-section" aria-labelledby="lessons-heading">
+            <div class="section-container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Wisdom</span>
+                    <h2 id="lessons-heading" class="section-title">What You Taught Me</h2>
+                    <p class="section-subtitle">Values and lessons you modeled that continue to light my path every
+                        single day.</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <!-- Lesson 1: Strength -->
+                    <div class="lesson-card" data-reveal>
+                        <div class="lesson-card-inner">
+                            <div class="lesson-front">
+                                <div class="lesson-icon">❤️</div>
+                                <h3 class="lesson-title">Strength</h3>
+                                <p class="lesson-hint">Hover to reveal</p>
+                            </div>
+                            <div class="lesson-back">
+                                <h3 class="lesson-title-back">❤️ Strength</h3>
+                                <p class="lesson-desc">
+                                    You showed me how to stand tall amidst life's storms, smiling through adversity and
+                                    never losing hope.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lesson 2: Kindness -->
+                    <div class="lesson-card" data-reveal>
+                        <div class="lesson-card-inner">
+                            <div class="lesson-front">
+                                <div class="lesson-icon">🌸</div>
+                                <h3 class="lesson-title">Kindness</h3>
+                                <p class="lesson-hint">Hover to reveal</p>
+                            </div>
+                            <div class="lesson-back">
+                                <h3 class="lesson-title-back">🌸 Kindness</h3>
+                                <p class="lesson-desc">
+                                    You taught me that soft words and acts of mercy can heal wounds and brighten the
+                                    darkest days.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lesson 3: Hard Work -->
+                    <div class="lesson-card" data-reveal>
+                        <div class="lesson-card-inner">
+                            <div class="lesson-front">
+                                <div class="lesson-icon">⭐</div>
+                                <h3 class="lesson-title">Hard Work</h3>
+                                <p class="lesson-hint">Hover to reveal</p>
+                            </div>
+                            <div class="lesson-back">
+                                <h3 class="lesson-title-back">⭐ Hard Work</h3>
+                                <p class="lesson-desc">
+                                    Through your quiet discipline, I learned that excellence is built day by day with
+                                    devotion and persistence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lesson 4: Faith -->
+                    <div class="lesson-card" data-reveal>
+                        <div class="lesson-card-inner">
+                            <div class="lesson-front">
+                                <div class="lesson-icon">🙏</div>
+                                <h3 class="lesson-title">Faith</h3>
+                                <p class="lesson-hint">Hover to reveal</p>
+                            </div>
+                            <div class="lesson-back">
+                                <h3 class="lesson-title-back">🙏 Faith</h3>
+                                <p class="lesson-desc">
+                                    You gave me the anchor of trust in something higher, showing me that hope and
+                                    prayers can move mountains.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lesson 5: Never Giving Up -->
+                    <div class="lesson-card" data-reveal>
+                        <div class="lesson-card-inner">
+                            <div class="lesson-front">
+                                <div class="lesson-icon">🏆</div>
+                                <h3 class="lesson-title">Never Giving Up</h3>
+                                <p class="lesson-hint">Hover to reveal</p>
+                            </div>
+                            <div class="lesson-back">
+                                <h3 class="lesson-title-back">🏆 Resilience</h3>
+                                <p class="lesson-desc">
+                                    You taught me that failures are just stepping stones, and that the only true defeat
+                                    is refusing to try again.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. APPRECIATION TIMELINE -->
+        <section id="timeline" class="timeline-section" aria-labelledby="timeline-heading">
+            <div class="section-container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Our Journey</span>
+                    <h2 id="timeline-heading" class="section-title">Appreciation Timeline</h2>
+                    <p class="section-subtitle">Moments of my life that you shaped with endless patience. You can edit
+                        these milestones below to write your own personal memories!</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line" aria-hidden="true"></div>
+
+                    <!-- Timeline Item 1: Childhood -->
+                    <div class="timeline-item left" data-reveal>
+                        <div class="timeline-dot" aria-hidden="true">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <span class="timeline-era">Childhood</span>
+                                <button class="btn-edit-timeline" aria-label="Edit Childhood Story"
+                                    data-target="timeline-childhood">
+                                    <i class="fas fa-pencil-alt"></i> Edit
+                                </button>
+                            </div>
+                            <h3 class="timeline-title">A Safe Harbor</h3>
+                            <div class="timeline-desc" id="timeline-childhood" contenteditable="false">
+                                You held my hand as I took my first steps, dried my tears, and built a warm nest of
+                                safety and magic. In your arms, I learned what perfect, unconditional love felt like.
+                                Thank you for protecting my innocence.
+                            </div>
+                            <div class="edit-actions hidden">
+                                <button class="btn-save-edit">Save</button>
+                                <button class="btn-cancel-edit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: School Days -->
+                    <div class="timeline-item right" data-reveal>
+                        <div class="timeline-dot" aria-hidden="true">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <span class="timeline-era">School Days</span>
+                                <button class="btn-edit-timeline" aria-label="Edit School Days Story"
+                                    data-target="timeline-schooldays">
+                                    <i class="fas fa-pencil-alt"></i> Edit
+                                </button>
+                            </div>
+                            <h3 class="timeline-title">Nurturing My Future</h3>
+                            <div class="timeline-desc" id="timeline-schooldays" contenteditable="false">
+                                Helping with homework late at night, cheering the loudest at every event, and
+                                sacrificing your own comfort so I could get the best education possible. You were my
+                                first teacher, and my biggest fan.
+                            </div>
+                            <div class="edit-actions hidden">
+                                <button class="btn-save-edit">Save</button>
+                                <button class="btn-cancel-edit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: Important Life Lessons -->
+                    <div class="timeline-item left" data-reveal>
+                        <div class="timeline-dot" aria-hidden="true">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <span class="timeline-era">Important Life Lessons</span>
+                                <button class="btn-edit-timeline" aria-label="Edit Life Lessons Story"
+                                    data-target="timeline-lessons">
+                                    <i class="fas fa-pencil-alt"></i> Edit
+                                </button>
+                            </div>
+                            <h3 class="timeline-title">Steering My Character</h3>
+                            <div class="timeline-desc" id="timeline-lessons" contenteditable="false">
+                                When life became confusing, your prayers and wisdom were my guiding compass. You taught
+                                me to value honor over status, and compassion above self-interest. You forged the values
+                                that define my soul.
+                            </div>
+                            <div class="edit-actions hidden">
+                                <button class="btn-save-edit">Save</button>
+                                <button class="btn-cancel-edit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: Today -->
+                    <div class="timeline-item right" data-reveal>
+                        <div class="timeline-dot" aria-hidden="true">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <span class="timeline-era">Today</span>
+                                <button class="btn-edit-timeline" aria-label="Edit Today Story"
+                                    data-target="timeline-today">
+                                    <i class="fas fa-pencil-alt"></i> Edit
+                                </button>
+                            </div>
+                            <h3 class="timeline-title">My Absolute Best Friend</h3>
+                            <div class="timeline-desc" id="timeline-today" contenteditable="false">
+                                Now that I am older, I understand the depth of your silent sacrifices even more. You are
+                                not just my mother—you are my advisor, my anchor, and my forever hero. Everything good
+                                in me is a reflection of you.
+                            </div>
+                            <div class="edit-actions hidden">
+                                <button class="btn-save-edit">Save</button>
+                                <button class="btn-cancel-edit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. MY PROMISE SECTION -->
+        <section id="promise" class="promise-section" aria-labelledby="promise-heading">
+            <div class="promise-bg-glow"></div>
+            <div class="section-container">
+                <div class="promise-card" data-reveal>
+                    <div class="promise-icon" aria-hidden="true">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <h2 id="promise-heading" class="promise-text">
+                        I may not always say it enough, <br>
+                        but <span class="accent-gold">I appreciate you.</span>
+                    </h2>
+                    <p class="promise-subtext font-handwritten">
+                        I’ll continue growing, learning, and making you proud.
+                    </p>
+                    <div class="promise-sparkles" aria-hidden="true">
+                        <span>✨</span>
+                        <span>✨</span>
+                        <span>✨</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. BIRTHDAY ENDING -->
+        <section id="ending" class="ending-section" aria-labelledby="ending-heading">
+            <div class="ending-container">
+                <div class="ending-box" data-reveal>
+                    <div class="ending-heart-burst" id="trigger-celebration" role="button"
+                        aria-label="Click to celebrate Honitee" tabindex="0">
+                        <span class="pulse-ring"></span>
+                        <span class="heart-symbol">❤️</span>
+                    </div>
+
+                    <h2 id="ending-heading" class="ending-title">Happy Birthday, Honitee ❤️</h2>
+                    <p class="ending-subtext">Made with love.</p>
+
+                    <div class="ending-actions">
+                        <button class="btn btn-outline" id="btn-shoot-confetti">
+                            <i class="fas fa-magic"></i> Shoot Confetti
+                        </button>
+                        <button class="btn btn-text-only" id="btn-reset-data"
+                            style="margin-top: 2rem; opacity: 0.6; font-size: 0.9rem;"
+                            aria-label="Reset edited memories and uploaded photos to default">
+                            <i class="fas fa-redo-alt"></i> Reset to Defaults
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <p>&copy; 2026 For Honitee. All rights reserved. Created with absolute adoration for the best mother in the
+            world.</p>
+    </footer>
+
+    <!-- Local JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
